@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Iraq Ai</title>
+    <title>softband tech</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143190286-2"></script>
     <meta name="google-site-verification" content="JGAJPRMYf41VENhFCUQ1BvjoD0JNhRL0qggDTPWAYv8" />
-
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <style>
         /* Set height to 100% for body and html to enable the background image to cover the whole page: */
         body,
@@ -51,9 +51,11 @@
             bottom: 0;
             left: 16px;
         }
-        .bottomleft a{
+
+        .bottomleft a {
             color: white;
         }
+
         /* Position text in the middle */
         .middle {
             position: absolute;
@@ -74,7 +76,7 @@
 <body>
     <div class="bgimg">
         <div class="topleft">
-            <!-- <p>Logo</p> -->
+            <img src="logo.png" style="max-width: 200px;" alt="SoftBand">
         </div>
         <div class="middle">
             <h1>COMING SOON</h1>
@@ -90,37 +92,37 @@
 </html>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-  
+
     gtag('config', 'UA-143190286-2');
-  </script>
+</script>
 <script>
-// Set the date we're counting down to
-var countDownDate = new Date(2020,10,1,12,0,0).getTime();
+    // Set the date we're counting down to
+    var countDownDate = new Date(2020, 10, 1, 12, 0, 0).getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+    // Update the count down every 1 second
+    var x = setInterval(function () {
 
-  // Get todays date and time
-  var now = new Date().getTime();
+        // Get todays date and time
+        var now = new Date().getTime();
 
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+        // Display the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);</script>
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);</script>
