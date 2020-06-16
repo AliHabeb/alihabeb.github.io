@@ -12,10 +12,20 @@
     <title>SoftBandTech</title>
 
     <style>
+        body {
+            background-color: #f5f6fa;
+        }
+
         .baner {
-            background-image: linear-gradient(90deg, #7b0be4, #5d09ab);
+            background-image: linear-gradient(90deg, #8927e6, #5700a9);
             min-height: 50vh;
         }
+
+        .card-img-top {
+            /* min-height: 300px; */
+        }
+
+
 
         #loader {
             position: fixed;
@@ -91,9 +101,54 @@
 
         </div>
     </div>
-    <div class="container">
+    <div class="container mt-4">
+        <div class="row expert">
+            <div class="col-sm-12 col-md-4 offset-md-4">
+                <h3 class="text-center">Our Expertise<b style="color: crimson;">.</b></h3>
+                <p class=" h5 text-center" style="color: #505f5f;">
+                    Our Developers have at least +4 years of experience in the field , below is brief list of our
+                    services.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
 
+            <div class="col-sm-12 col-md-6">
+                <div class="container">
+                    <img class="card-img-top img-fluid" src="./assets/web1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Phone Application Develoment</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+
+                    </div>
+
+                </div>
+                <hr class="d-sm-block d-md-none">
+            </div>
+            <hr class="d-sm-block">
+            <div class="col-sm-12 col-md-6">
+
+                <div class="container">
+                    <img class="card-img-top img-fluid" style="transform: scale(1.2);" src="./assets/web4.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
+
+    <footer>
+
+    </footer>
 
 </body>
 
@@ -113,6 +168,7 @@
             $("#loader").slideUp();
             $(".lead").addClass("animate__animated animate__fadeInLeft")
             $("h1.display-4").addClass("animate__animated animate__bounce ")
+            $(".expert").addClass("animate__animated animate__fadeInLeftBig ")
         }, 1000)
     });
 
