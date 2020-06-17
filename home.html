@@ -19,7 +19,23 @@
         .baner {
             background-image: linear-gradient(90deg, #8927e6, #5700a9);
             min-height: 50vh;
+            /* border-bottom-left-radius: 50vw 40px;
+            border-bottom-right-radius: 50vw 40px; */
+            clip-path: polygon(0% 0%, 100% 0%, 100% 87%, 0 100%);
+            -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 87%, 0 100%);
+
         }
+
+        /* .baner:after {
+            content: "";
+            background-image: linear-gradient(90deg, #8927e6, #5700a9);
+            height: 80px;
+            transform: skewY(-10deg);
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        } */
 
         .card-img-top {
             /* min-height: 300px; */
@@ -68,6 +84,7 @@
     <div id="loader">
         <div class="loader-logo ">
             <img src="./smal-logo.png" alt="">
+
         </div>
     </div>
     <div class="baner">
@@ -118,9 +135,9 @@
                     <img class="card-img-top img-fluid" src="./assets/web1.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Smart Phone Application Develoment</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
-                            card's content.</p>
+                            card's content.</p> -->
 
                     </div>
 
@@ -135,9 +152,9 @@
                         alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
-                            card's content.</p>
+                            card's content.</p> -->
 
                     </div>
                 </div>
@@ -147,7 +164,16 @@
     </div>
 
     <footer>
-
+        <div class="container">
+            <hr>
+            <p class="float-left">
+                © 2020 SoftBand. All Rights Reserved.
+            </p>
+            <p class="float-right">
+                <a target="_blank" href="https://www.linkedin.com/company/softband"><img src="./assets/linkedin.png" alt="SoftBand Linkedin Page"></a>
+                <a target="_blank" href="https://www.facebook.com/softbandtech"><img src="./assets/fb.png" alt="SoftBand Linkedin Page"></a>
+            </p>
+        </div>
     </footer>
 
 </body>
@@ -162,7 +188,6 @@
     crossorigin="anonymous"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        console.log("done");
 
         setTimeout(() => {
             $("#loader").slideUp();
