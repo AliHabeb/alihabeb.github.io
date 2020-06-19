@@ -1,0 +1,10 @@
+applications:
+- name: SoftBandSite
+  routes:
+    - route: sfotband.cfapps.io
+    - route: www.softband.tech
+    - route: softband.tech
+  memory: 32M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack
+  
