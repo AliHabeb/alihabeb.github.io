@@ -2,8 +2,8 @@ applications:
 - name: SoftBandSite
   routes:
     - route: sfotband.cfapps.io
-    - route: www.softband.tech
-    - route: softband.tech
+    - route: www.iraqai.com
+    - route: iraqai.com
   memory: 32M
   instances: 1
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack
